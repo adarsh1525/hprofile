@@ -4,5 +4,12 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - name: Testking workflow
-        run: echo "workflow works!"
+     - name: checkout source code
+       uses: actions/checkout@v4
+     
+     - name: maven test
+       run: mvn test
+
+     - name: maven checkstyle
+       run: mvn checkstyle:checstyle
+       
