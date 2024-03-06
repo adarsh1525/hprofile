@@ -11,5 +11,5 @@ jobs:
        run: mvn test
 
      - name: maven checkstyle
-       run: mvn checkstyle:checstyle
-       
+       run: mvn checkstyle:checkstyle
+
