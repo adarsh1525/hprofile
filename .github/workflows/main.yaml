@@ -2,7 +2,7 @@ name: Hprofile Actions
 on: workflow_dispatch
 jobs:
   testing:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu:2022
     steps:
       - name: Testking workflow
         run: echo "workflow works!"
